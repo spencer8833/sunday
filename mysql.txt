@@ -1,0 +1,38 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.2
+-- http://www.phpmyadmin.net
+-- 
+-- 主機: localhost
+-- 建立日期: Dec 21, 2014, 07:43 AM
+-- 伺服器版本: 5.0.45
+-- PHP 版本: 5.2.3
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- 資料庫: `D10116232sql`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `sun_member`
+-- 
+
+CREATE TABLE `sun_member` (
+  `fname` varchar(10) NOT NULL,
+  `lname` varchar(10) NOT NULL,
+  `gender` tinyint(4) NOT NULL,
+  `birth` date NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY  (`email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- 列出以下資料庫的數據： `sun_member`
+-- 
+
+INSERT INTO `sun_member` VALUES ('spencer', 'chen', 0, '2014-12-03', 'spencer8833@yahoo.com.tw', '0937821333', 'here', 'spencer8833');
